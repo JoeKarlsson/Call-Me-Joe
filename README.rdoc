@@ -1,28 +1,10 @@
-== README
+# Call Me Joe: Offical Blog and Social Media Proof of concept
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my blog and social media site. To learn more about me visit me at the following address:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://www.linkedin.com/in/josephcarlson3
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Joe Karlsson 
+
+Editted 12/2/13
