@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CallMeJoe</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= jav%>
-ascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags </head>
+  <title>Call Me Joe | <%= yield(:title) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
 <body>
 
 <%= yield %>
