@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-CallMeJoe::Application.config.secret_key_base = '50f1eb7c8ccbd313cc843233df2270e9a562bc0aaf791883741b4021a03149aac161af3b5d5270b4ae9baa2a785fca3e95e190f575bb5dc3a6f125d958f0bd02'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+CallMeJoe::Application.config.secret_key_base = secure_token
