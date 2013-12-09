@@ -34,13 +34,6 @@ class UsersController < ApplicationController
     end
   end
 
-  private
-
-    def user_params
-      params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
-    end
-
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
@@ -74,6 +67,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 end
