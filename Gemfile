@@ -8,6 +8,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'faker', '1.1.2'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
