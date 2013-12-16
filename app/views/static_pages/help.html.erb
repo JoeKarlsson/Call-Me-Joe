@@ -1,8 +1,27 @@
-<% provide(:title, 'Help') %>
-<h1>Help</h1>
-<p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.
-  To get help on this sample app, see the
-  <a href="http://railstutorial.org/book">Rails Tutorial book</a>.
-</p>
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+      This is the home page for the
+      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+      sample application.
+    </h2>
+
+    <%= link_to "Sign up now!", signup_path,
+                                class: "btn btn-large btn-primary" %>
+  </div>
+
+  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<% end %>
