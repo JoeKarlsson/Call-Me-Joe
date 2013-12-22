@@ -1,0 +1,46 @@
+<table>
+  <tr>
+	<div class="row">
+	  <div class="span8">
+		<div class="row">
+		  <div class="span8">
+			<h4><strong><%= link_to post.title, post %></strong></h4>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="span2">
+			<a href="#" class="thumbnail">
+				<%= image_tag post.image_url %>
+			</a>
+		  </div>
+		  <div class="span6">      
+			<p>
+			  <%= truncate post.content, length: 500, separator: ' '  %>
+			</p>
+			<h4><strong><%= link_to 'Read More', post, class: 'btn' %></strong></h4>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="span8">
+			<p></p>
+			<p>
+			  <i class="icon-user"></i> by Joe Carlson </br>
+			  <span class="timestamp"> 
+			  	Posted <%= time_ago_in_words(post.created_at) %> ago.
+			  </span>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="span8">
+			<p></p>
+			<p>
+				<% if current_user && current_user.admin? %>
+					<%= link_to "Delete", post, method: :destroy, data: { confirm: "You sure?" } %>
+					<%= link_to 'Edit', edit_post_path(post) %></td>
+				<% end %>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</div>

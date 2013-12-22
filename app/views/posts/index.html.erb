@@ -1,0 +1,15 @@
+<h1>Blog Posts</h1>
+
+<%= will_paginate %>
+<% @posts.each do |post| %>
+   <%= render post %>
+<% end %>
+<%= will_paginate %>
+<br/>
+
+<p>
+	<% if current_user && current_user.admin? %>
+		<%= link_to 'New Post', new_post_path %>
+	<% end %>
+</p>
+
