@@ -79,5 +79,5 @@ CallMeJoe::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
   # Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
-  config.force_ssl = true
+  # config.force_ssl = true
 end
