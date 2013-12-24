@@ -1,9 +1,10 @@
 @import "bootstrap";
-@import "bootstrap-responsive";
+/*@import "bootstrap-responsive"; */
 /* universal */
 
 html {
   overflow-y: scroll;
+  height:100%;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 
 section {
   overflow: auto;
+  margin: 50px 0;
 }
 
 textarea {
@@ -128,7 +130,7 @@ $grayMediumLight: #eaeaea;
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -153,7 +155,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $grayLighter;
+    border-left: 1px;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -161,7 +163,6 @@ aside {
     }
     &:hover {
       text-decoration: none;
-      color: $blue;
     }
   }
   strong {
@@ -207,66 +208,23 @@ input {
   @extend .error;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 60px;
+/*Carousel CSS */
+.carousel,
+.item,
+.active {
+        height:100%;
 }
 
-.carousel .container {
-  position: relative;
-  z-index: 9;
+.carousel-inner {
+        height:100%;
 }
 
-.carousel-control {
-  height: 80px;
-  margin-top: 0;
-  font-size: 120px;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-  background-color: transparent;
-  border: 0;
-  z-index: 10;
+.fill {
+        width:100%;
+        height:100%;
+        background-position: center;
+        background-size: cover;
 }
-
-.carousel-control:hover {
-  background-color: transparent
-}
-
-.carousel .item {
-  height: 500px;
-}
-.carousel img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-
-.carousel-caption {
-  background-color: transparent;
-  position: static;
-  max-width: 550px;
-  padding: 70px;
-  margin-top: 200px;
-}
-.carousel-caption h1,
-.carousel-caption .lead {
-  margin: 0;
-  line-height: 1.25;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
-.carousel-caption .btn {
-  margin-top: 10px; color: fff;
-&:visited {
-  color: #fff;
-}
-}
-	
 /*POSTS FORM CSS */
 .post_field input[type=text], .post_field textarea {
 width: 100%;
@@ -285,9 +243,9 @@ height:50 px;
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      border-bottom: 1px solid;
     }
   }
 }
@@ -307,7 +265,7 @@ height:50 px;
   display: block;
 }
 .timestamp {
-  color: $grayLight;
+  color: grey;
 }
 .gravatar {
   float: left;
@@ -382,6 +340,52 @@ aside {
     text-shadow: 0 2px 2px rgba(0,0,0,0.5);
   }
 
+/* Homepage Header
+    -------------------------------------------------- */
+#headerwrap {
+    background: url('http://i.imgur.com/3hPdGW5.jpg') no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 750px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    right: -30;
+    left: -30;
+    position: relative;
+}
+#headerwrap h1 {
+    margin-top: 130px;
+    color: #fff;
+    font-size: 140px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#headerwrap h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#headerwrap i {
+    font-size: 35px;
+    color: #fff;
+}
+#headerwrap .spacer {
+    margin-top: 220px;
+}
+
+
 /* RESPONSIVE CSS
     -------------------------------------------------- */
 
@@ -394,14 +398,6 @@ aside {
       .navbar-inner {
         border-radius: 0;
         margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
       }
 
       .featurette {
@@ -427,27 +423,6 @@ aside {
       .carousel {
         margin-left: -20px;
         margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
       }
 
       .marketing .span4 + .span4 {

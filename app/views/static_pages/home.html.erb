@@ -1,6 +1,6 @@
 <% if signed_in? %>
   <div class="row">
-    <aside class="span4">
+    <aside class=".col-md-4">
       <section>
         <%= render 'shared/user_info' %>
       </section>
@@ -11,23 +11,32 @@
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
-    <div class="span8">
+    <div class=".col-md-8">
       <h3>Micropost Feed</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
-  <div>
 
-    <%= render 'carousel' %>
-    <div>
-      
-      <script>
-          !function ($) {
-            $(function(){
-              // carousel demo
-              $('#myCarousel').carousel()
-            })
-          }(window.jQuery)
-        </script>                                                                                                                                                          
+<!-- MAIN IMAGE SECTION -->
+<div id="headerwrap">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h1>Call Me Joe</h1>
+      <h2>I Create Cool Stuff</h2>
+      <div class="spacer"></div>
+      <i class="fa fa-angle-down"></i>
+    </div>
+  </div><!-- row -->
+</div><!-- /headerwrap -->
+
+<!-- WELCOME SECTION -->
+  <div class="container">
+    <div class="row mt">
+      <div class="col-lg-8">
+        <h1>We build websites & apps that people love!</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+    </div><!-- /row -->
+  </div><!-- /.container -->                                                                                                                                                    
 <% end %>

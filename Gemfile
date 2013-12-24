@@ -4,11 +4,12 @@ ruby '1.9.3'
 
 gem 'rails', '4.0.2'
 gem 'pg', '0.15.1'
-gem 'bootstrap-sass', '2.3.2.0'
+gem 'bootstrap-sass'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

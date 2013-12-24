@@ -1,41 +1,38 @@
+<div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-	<div id="myCarousel" class="carousel slide">   
-      <div class="carousel-inner">
-        <div class="item active">
-		<img src="http://i.imgur.com/8QEtx3k.jpg" alt="">
-          <div class="container">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="fill" style="background-image:url('http://i.imgur.com/3hPdGW5.jpg');"></div>
             <div class="carousel-caption">
-              <h1>Call Me Joe</h1>
-              <p class="lead">My name is Joseph Carlson, but you can call me Joe! To learn more about me, click the button below.</p>
-              </br>
-              <%= link_to "About Me", about_path, class: 'btn btn-large btn-primary'  %>
-            </br>
+              <h1>A Full-Width Image Slider Template</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+            <div class="carousel-caption">
+              <h1>Caption 2</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="carousel-caption">
+              <h1>Caption 3</h1>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img src="http://i.imgur.com/kTv9fDI.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>My Blog</h1>
-              <p class="lead">Thoughts and helpful code snippets</p>
-              </br>
-              <%= link_to 'Enter Here', "#", class: "btn btn-large btn-primary" %>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://i.imgur.com/1zjVPoN.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Twitter Clone</h1>
-              <p class="lead">Fully functional twitter clone and social media platform</p>
-              </br>
-              <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-            </div>
-          </div>
-        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <.col-md- class="glyphicon glyphicon-chevron-left"></.col-md->
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <.col-md- class="glyphicon glyphicon-chevron-right"></.col-md->
+        </a>
       </div>
-      <a class="carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->

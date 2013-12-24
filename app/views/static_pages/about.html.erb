@@ -1,88 +1,181 @@
 <% provide(:title, 'About the Author') %>
-<h1>About This Site</h1>
-<h3 pull-left>Call Me Joe is the personal blog and web design playground for Minneapolis based web developer, SharePoint consultant, tech gunkie, and photographer, Joe Carlson.</h3> </br>
+<div class="container">
 
-<p> This is a place for me to showcase my projects and share what I know with the world, including a fully functional Twitter client. Since you need to be logged in to take advantage of most of my sites features, you will need to create a new account (don’t worry the site is encrypted, and secure (https), and I won’t mess or distribute your email address or anything!).
+  <h1>About This Site</h1>
+  <h3 pull-left>Call Me Joe is the personal blog and web design playground for Minneapolis based web developer, SharePoint consultant, tech gunkie, and photographer, Joe Carlson.</h3> </br>
+  <p> This is a place for me to showcase my projects and share what I know with the world, including a fully functional Twitter client. Since you need to be logged in to take advantage of most of my sites features, you will need to create a new account (don’t worry the site is encrypted, and secure (https), and I won’t mess or distribute your email address or anything!).
 
-The Twitter app is a proof of concept of some of the work I have been studying. Just like with real Twitter, you can follow/unfollow users, compose “tweets,” browse your Twitter feed, update your profile settings, manage your posts, browse in a mobile, tablet and desktop view, and much more! I recommend creating an account, following some of the users, and "tweeting.""
+  The Twitter app is a proof of concept of some of the work I have been studying. Just like with real Twitter, you can follow/unfollow users, compose “tweets,” browse your Twitter feed, update your profile settings, manage your posts, browse in a mobile, tablet and desktop view, and much more! I recommend creating an account, following some of the users, and "tweeting.""
 
-Call Me Joe was started in 2013 and is developed using Ruby On Rails, and is hosted by Heroku.
-</p>
-</br></br>
+  Call Me Joe was started in 2013 and is developed using Ruby On Rails, and is hosted by Heroku.</p>
+  </br></br>
 
-<h1>Who is Joe?</h1>
-<h3 pull-left>My name is Joe Carlson and my passion is helping people leverage powerful new technology to help grow the story of their business. </h3>
-</br>
+  <h1>Who is Joe?</h1>
+  <h3 pull-left>My name is Joe Carlson and my passion is helping people leverage powerful new technology to help grow the story of their business. </h3>
+  </br>
   <div>
     <img class="featurette-image pull-right" <%= image_tag("PixelPortrait.jpg", alt: "")%>
-
-
     <p class="lead">It is my personal mission is to better understand you and your unique business story so I can help you leverage powerful tools to build your business.</p>
   </div>
 
   <p>When I was growing up, my family had a Mac II. I spent hours on it creating elaborate stories and drawings on it with simple paint programs. It was amazing to me that I could use this little machine to create pictures and to share my ideas with others. This computer was able to spark conversations with my friends and family and instilled a lifelong interest in how technology can be used to bring people together. </br></br>
 
-  Today, as a consultant at RBA Inc., I create new stories for businesses with technology. I have been successfully supporting small to large enterprises in the Twin Cities area with IT project consulting services and professional services across multiple technology and business areas. </br> </br> 
+  Today, as a consultant at RBA Inc., I create new stories for businesses with technology. I have been successfully supporting small to large enterprises in the Twin Cities area with IT project consulting services and professional services across multiple technology and business areas. </br></br> 
 
-  I graduated from Gustavus Adolphus College with a degree in Computer Science, and a minor in Art History. During my four years at Gustavus I was highly involved around campus. I was Co-President of Epsilon Pi Alpha Fraternity. I represented Gustavus from the student perspective as a 'Gustavus Ambassador.' I was a member of the first year orientation process as a Gustie Greeter, and I worked as a Technology Helpline Associate at Gustavus Technology Services.</br> </br> 
+  I graduated from Gustavus Adolphus College with a degree in Computer Science, and a minor in Art History. During my four years at Gustavus I was highly involved around campus. I was Co-President of Epsilon Pi Alpha Fraternity. I represented Gustavus from the student perspective as a 'Gustavus Ambassador.' I was a member of the first year orientation process as a Gustie Greeter, and I worked as a Technology Helpline Associate at Gustavus Technology Services.</br></br> 
 
-  RBA is an award-winning, nationally-recognized Microsoft partner, that delivers unparalleled technology expertise combined with an uncompromising commitment to service. Currently on Inc. 500’s List of the country’s fastest-growing private companies and consistently named a Best Place to Work, RBA’s entrepreneurial spirit and rewarding employment experience attracts the industry's top technical talent.</br> </br> 
-    </p>
+  RBA is an award-winning, nationally-recognized Microsoft partner, that delivers unparalleled technology expertise combined with an uncompromising commitment to service. Currently on Inc. 500’s List of the country’s fastest-growing private companies and consistently named a Best Place to Work, RBA’s entrepreneurial spirit and rewarding employment experience attracts the industry's top technical talent.</br></br></p>
+  </br></br></br>
 
-
-    <div class="container marketing">
-    <h1>Where I Have Worked</h1>
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-      <div align = "center">
+  <!-- Resume -->
+  <div class="row mt">
+    <div class="col-lg-12">
+      <h1>Where I have worked</h1>
+    </div><!-- col-lg-12 -->
+  </div><!-- row -->
+  <div class="row mt">
+    <div class="col-lg-4">
       <%= link_to image_tag("RBA.jpg", alt: ""), "http://www.rbaconsulting.com/" %>
-          <h2>RBA Inc.</h2>
-      <h3>Consultant</h3>
+      <h3>SharePoint Consultant</h3>
+      <p>Work in partnership with clients, advising them how to use SharePoint in order to meet their business objectives, overcome problems, or to provide strategic guidance to organizations with regard to IT technology.</p>
+      <p><a> <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
+    </div>
+             
+    <div class="row mt">
+      <div class="col-lg-4">
+        <%= link_to image_tag("TORO.jpg", alt: ""), "http://www.toro.com/"%> 
+        <h3>Advanced Desktop Intern and Project Manager</h3>
+        <p>Tested and verified the compatibility of all applications used by the Toro Company on Windows 7. Ran test environments, and coordinated tests with current employees, facilitated testing process. Documented all test cases, and communicated with others working on the project.
+         Also worked as Project Manager on developing a Software that is currently used by The Toro Company.</p>
+         <p><a> <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
       </div>
-          <p>Work in partnership with clients, advising them how to use SharePoint in order to meet their business objectives, overcome problems, or to provide strategic guidance to organizations with regard to IT technology.</p>
-          <p><a <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-      <div align = "center">
-      <%= link_to image_tag("TORO.jpg", alt: ""), "http://www.toro.com/"%>
-          <h2>The Toro Company</h2>
-      <h3>Advanced Desktop Intern and Project Manager</h3>
-      </div>
-          <p>Tested and verified the compatibility of all applications used by the Toro Company on Windows 7. Ran test environments, and coordinated tests with current employees, facilitated testing process. Documented all test cases, and communicated with others working on the project.
-      Also worked as Project Manager on developing a Software that is currently used by The Toro Company.</p>
-          <p><a <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-      <div align = "center">
-      <img class="img-circle" data-src="holder.js/140x140" <%= link_to image_tag("GAC.jpg", alt: ""), "https://gustavus.edu/"%>
-          <h2>Gustavus Technology Services</h2>
-      <h3>Technology Helpline Associate</h3>
-      </div>
-          <p>Communicated with students and staff, solved computer and technology related issues. Provided initial contact for people with service issues. Trained incoming employees on computer troubleshooting techniques.</p>
-          <p><a <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
 
-      <div class="featurette">
-        <img class="featurette-image pull-right" <%= image_tag("Joe Circle.JPG", alt: "")%>
-      <h1>Lets Get In Touch</h1>
-      <p class="lead">Need someone to listen to your story? Share your story with me!</p>
-        <p>I am always interested to hear from anyone who wishes to get in touch with me...whether it's a questions about SharePoint, web development or just to say 'Hello'. Drop me a line!</p> </br>
+    <div class="row mt">
+      <div class="col-lg-4">
+        <%= link_to image_tag("GAC.jpg", alt: ""), "https://gustavus.edu/"%>
+        <h3>Technology Helpline Associate</h3>
+        <p>Communicated with students and staff, solved computer and technology related issues. Provided initial contact for people with service issues. Trained incoming employees on computer troubleshooting techniques.</p>
+        <p><a> <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
+      </div>  
+  </div><!-- row -->
+  </br></br></br>
+
+  <!--EDUCATION DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+      <div class="col-lg-2 col-lg">
+        <h3>EDUCATION</h3>
       </div>
-    </br>
+      <div class="col-lg-6">
+        <p><t>Bachelors of Arts in Computer Science</t><br/>
+          Gustavus Adolphus College <br/>
+          Art History and Math minors
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p><sm>GRADUATED IN MAY 2012</sm><br/></p>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div></br></br></br>
 
-    <div>
-    <%= link_to image_tag("Social Media/linkedin-icon.png", alt: ""), "http://www.linkedin.com/in/josephcarlson3" %>
-    <%= link_to image_tag("Social Media/flikr-icon.png", alt: ""), "https://secure.flickr.com/photos/josephcarlson1/" %>
-    <%= link_to image_tag("Social Media/mail-icon.png", alt: ""), "mailto:josephcarlson1@gmail.com" %>
-    <%= link_to image_tag("Social Media/twitter-icon.png", alt: ""), "https://twitter.com/nostromosaurus" %>
-    <%= link_to image_tag("Social Media/google-icon.png", alt: ""), "https://plus.google.com/102160279373578830880/posts?hl=en&tab=XX&authuser=0" %>
-    <%= link_to image_tag("Social Media/facebook-icon.png", alt: ""), "https://www.facebook.com/joe.carlson3" %>
-    <%= link_to image_tag("Social Media/lastfm-icon.png", alt: ""), "http://www.last.fm/user/Hells_Satans" %>
-    </div> </br></br></br>
+  <!-- Service and Leadership Experience -->
+  <div>
+    <div class="col-lg-12">
+      <h1>Service and Leadership</h1>
+    </div><!-- col-lg-12 -->
+  </div><!-- row -->
 
-    <h1>Thanks for stopping by!</h1>
-    
-  </br>
+  <div id="services">
+    <div class="container">
+      <div class="row mt">
+        <div class="col-lg-1 centered">
+          <i class="fa fa-certificate"></i>
+        </div>
+        <div class="col-lg-3">
+          <h3>Tronix Team</h3>
+          <h5>Instructor</h5>
+          <p>Worked with 30 students weekly to eliminate the achievement gap in STEM fields by providing hands-on electronic projects to diverse, underserved adolescent groups in Minneapolis.</p>
+        </div>
+
+        <div class="col-lg-1 centered">
+          <i class="fa fa-question-circle"></i>
+        </div>
+        <div class="col-lg-3">
+          <h3>Epsilon Pi Alpha Fraternity </h3>
+          <h5>President</h5>
+          <p>Led and organized a group of 50+ highly involved men on campus. Helped organize our annual Take the Hill Triathlon and increased charitable revenue by over 57%. Mentored and developed leadership skills with group members by hosting educational events and speakers.</p>
+        </div>
+      
+        <div class="col-lg-1 centered">
+          <i class="fa fa-globe"></i>
+        </div>
+        <div class="col-lg-3">
+          <h3>Gustavus Orientation Program</h3>
+          <h5>Gustie Greeter</h5>
+          <p> Selected as a role model and leader to create a positive community for incoming Gustavus students. Planned and implemented educational and social programs, to support communication and interpersonal relationships for the personal success of the students.</p>
+        </div>
+      
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- Service and Leadership Experience -->
+  </br></br></br>
+
+  <!-- Social Connection -->
+  <div>
+    <div class="col-lg-12">
+      <h1>Stay Connected</h1>
+      <br>
+    </div><!-- col-lg-12 -->
+  </div><!-- row -->
+
+  <div id="lg">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-2 col-lg-offset-1">
+          <%= link_to image_tag("Social Media/linkedin-icon.png", alt: ""), "http://www.linkedin.com/in/josephcarlson3" %>
+        </div>
+        <div class="col-lg-2">
+          <%= link_to image_tag("Social Media/flikr-icon.png", alt: ""), "https://secure.flickr.com/photos/josephcarlson1/" %>
+        </div>
+        <div class="col-lg-2">
+          <%= link_to image_tag("Social Media/google-icon.png", alt: ""), "https://plus.google.com/102160279373578830880/posts?hl=en&tab=XX&authuser=0" %>
+        </div>
+        <div class="col-lg-2">
+          <%= link_to image_tag("Social Media/lastfm-icon.png", alt: ""), "http://www.last.fm/user/Hells_Satans" %>
+        </div>
+        <div class="col-lg-2">
+          <%= link_to image_tag("Social Media/lastfm-icon.png", alt: ""), "http://www.last.fm/user/Hells_Satans" %>
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- dg -->
+  </br></br></br>
+
+  <!-- CONTACT FOOTER -->
+  <div id="cf">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="mapwrap">
+            <iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x52b3329f3f53347d%3A0xa116454ca6c68c57!2s521+S+7th+St%2C+Minneapolis%2C+MN+55415!5e0!3m2!1sen!2sus!4v1387907651004"></iframe>
+          </div>  
+        </div><!--col-lg-8-->
+        <div class="col-lg-4">
+          <h4>ADDRESS<br/>Home Office</h4>
+          <br>
+          <p>
+            521 South Seventh Street </br>
+            Minneapolis, Minnesota
+          </p>
+          <p>
+            M: 612.600.7305<br/>
+            O: 952.404.2676<br/>
+            E: <a href="mailto:josephcarlson1@gmail.com">josephcarlson1@gmail.com</a>
+          </p>
+          <p>Being located in the heart of downtown Minneapolis helps me stay connected.</p>
+        </div><!--col-lg-4-->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- Contact Footer -->
+
+</div> <!-- container -->

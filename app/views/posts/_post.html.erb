@@ -1,19 +1,19 @@
 <table>
   <tr>
 	<div class="row">
-	  <div class="span8">
+	  <div class=".col-md-8">
 		<div class="row">
-		  <div class="span8">
+		  <div class=".col-md-8">
 			<h4><strong><%= link_to post.title, post %></strong></h4>
 		  </div>
 		</div>
 		<div class="row">
-		  <div class="span2">
+		  <div class=".col-md-2">
 			<a href="#" class="thumbnail">
 				<%= image_tag post.image_url %>
 			</a>
 		  </div>
-		  <div class="span6">      
+		  <div class=".col-md-6">      
 			<p>
 			  <%= truncate post.content, length: 500, separator: ' '  %>
 			</p>
@@ -21,18 +21,18 @@
 		  </div>
 		</div>
 		<div class="row">
-		  <div class="span8">
+		  <div class=".col-md-8">
 			<p></p>
 			<p>
 			  <i class="icon-user"></i> by Joe Carlson </br>
-			  <span class="timestamp"> 
+			  <.col-md- class="timestamp"> 
 			  	Posted <%= time_ago_in_words(post.created_at) %> ago.
-			  </span>
+			  </.col-md->
 			</p>
 		  </div>
 		</div>
 		<div class="row">
-		  <div class="span8">
+		  <div class=".col-md-8">
 			<p></p>
 			<p>
 				<% if current_user && current_user.admin? %>
