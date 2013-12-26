@@ -1,18 +1,18 @@
 <% provide(:title, "Edit user") %>
-<h1>Update your profile</h1>
+<div class="container">
 
-<div class="row">
-  <div class=".col-md-6 offset3">
-    <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
-      <%= render 'fields', f: f %>
-      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-    <% end %>
+	<h1>Update your profile</h1>
 
-    <%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">change</a>
-  </div>
+	<div class="row">
+	  <div class=".col-md-6 offset3">
+	    <%= form_for(@user) do |f| %>
+	      <%= render 'shared/error_messages', object: f.object %>
+	      <%= render 'fields', f: f %>
+	      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+	    <% end %>
+        </br>
+	    <%= gravatar_for @user %>
+	    <a href="http://gravatar.com/emails">change</a>
+	  </div>
+	</div>
 </div>
-
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
