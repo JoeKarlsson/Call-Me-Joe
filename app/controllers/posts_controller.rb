@@ -19,6 +19,11 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def recent
+    @post = Post.find(params[:id])
+    @posts = Post.includes(:comments).order("created_at desc").limit(3)
+  end
+
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])

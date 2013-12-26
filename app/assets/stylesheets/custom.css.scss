@@ -38,7 +38,7 @@ textarea {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 12px;
   font-weight: bold;
   line-height: 1;
 }
@@ -84,11 +84,6 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-}
-
-a:hover {
-  color:#000;
-  background-color: transparent;
 }
 
 h2 {
@@ -292,7 +287,7 @@ aside {
   }
   .form-signin .form-control {
     position: relative;
-    font-size: 16px;
+    font-size: 20px;
     height: auto;
     padding: 10px;
     -webkit-box-sizing: border-box;
@@ -304,8 +299,8 @@ aside {
   }
   .form-signin input[type="text"] {
     margin-bottom: -1px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
     border-top-style: solid;
     border-right-style: solid;
     border-bottom-style: none;
@@ -314,8 +309,8 @@ aside {
   }
   .form-signin input[type="password"] {
     margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
     border-top-style: none;
     border-right-style: solid;
     border-bottom-style: solid;
@@ -353,13 +348,14 @@ aside {
     position: relative;
 }
 #homeheaderwrap h1 {
-    margin-top: 130px;
+    margin-top: 40px;
     color: #fff;
     font-size: 140px;
     font-weight: 700;
     letter-spacing: 3px;
 }
 #homeheaderwrap h2 {
+    margin-top: 80px;
     color: #fff;
     font-size: 50px;
     font-weight: 100;
@@ -378,7 +374,6 @@ aside {
   background: url('http://i.imgur.com/DzxC2P2.jpg') no-repeat center top;
   margin-top: -10px;
   padding-top: 20px;
-  text-align: center;
   background-attachment: relative;
   background-position: center center;
   min-height: 750px;
@@ -398,8 +393,10 @@ aside {
 }
 
 #aboutheaderwrap h1 {
-  margin-top: 130px;
+  margin-top: 40px;
+  margin-left: 20px;
   color: #fff;
+  text-align: left;
   font-size: 140px;
   font-weight: 700;
   letter-spacing: 3px;
