@@ -1,4 +1,9 @@
-<h1>Blog Posts</h1>
+<% provide(:title, 'Blog') %>
+<div class="full-width-image-1">
+  <h1> Blog Posts </h1>
+</div><!-- /full-width-image-1 -->
+</br></br></br>
+
 
 <%= will_paginate %>
 <% @posts.each do |post| %>
@@ -7,9 +12,11 @@
 <%= will_paginate %>
 <br/>
 
+<div class="container">
 <p>
 	<% if current_user && current_user.admin? %>
 		<%= link_to 'New Post', new_post_path %>
 	<% end %>
 </p>
+</div.
 

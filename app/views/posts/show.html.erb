@@ -1,4 +1,5 @@
 <% provide(:title, @post.title) %>
+
 <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51d3ad7a6af77e84"></script>
@@ -15,49 +16,31 @@
 </script>
 <!-- AddThis Smart Layers END -->
 
-<p id="notice"><%= notice %></p>
- 
-	<div class="row">
-	  <div class=".col-md-8">
-		<div class="row">
-		  <div class=".col-md-8">
-			<h4><strong><%= @post.title %></strong></h4>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class=".col-md-8">
-			<p></p>
-			<p>
-			  <i class="icon-user"></i> by Joe Carlson </br>
-			  <.col-md- class="timestamp"> Posted <%= time_ago_in_words(@post.created_at) %> ago.
-			  </.col-md->
+<div class="blog-full-width-post-image" style='background-image: url(<%=@post.image_url %>); '>
+</div>
+
+<div>
+	<div class="container">
+	   <div class="row">
+		  <div class="col-lg-12 section">
+		    <h1><%= link_to @post.title %></h1>
+		    <i class="icon-user"></i> by Joe Carlson </br>
+			<div class="timestamp"> 
+			  Posted <%= time_ago_in_words(@post.created_at) %> ago.
+		    </div> </br>
+		    <p class="lead section-lead">
+		      <%= @post.content.gsub(/\n/, '<br/>').html_safe %>
 			</p>
+			</br>
 		  </div>
-		</div>
-		<div class="row">
-		  <div class=".col-md-2">
-			<a href="#" class="thumbnail">
-				<%= image_tag @post.image_url %>
-			</a>
-		  </div>
-		  <div class=".col-md-6">      
-			<p>
-			  <%= @post.content.gsub(/\n/, '<br/>').html_safe %>
-			</p>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class=".col-md-8">
-			<p></p>
-			<p>
-				<% if current_user && current_user.admin? %>
-					<%= link_to "Delete", @post, method: :delete, data: { confirm: "You sure?" } %>
-					<%= link_to 'Edit', edit_post_path(@post) %></td>
-				<% end %>
-			</p>
-		  </div>
-		</div>
-	  </div>
+	   </div> <!--row-->
 	</div>
 
-<%= link_to 'Back to Posts', posts_path %>
+	<div class="container">
+	  <% if current_user && current_user.admin? %>
+		<%= link_to "Delete", post, method: :destroy, data: { confirm: "You sure?" } %>
+		<%= link_to 'Edit', edit_post_path(post) %></td>
+	  <% end %>
+	  <%= link_to 'Back to Posts', posts_path %>
+	</div>
+</div>

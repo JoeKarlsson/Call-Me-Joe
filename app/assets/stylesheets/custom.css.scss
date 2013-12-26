@@ -86,6 +86,11 @@ h1 {
   margin-bottom: 30px;
 }
 
+a:hover {
+  color:#000;
+  background-color: transparent;
+}
+
 h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
@@ -208,23 +213,6 @@ input {
   @extend .error;
 }
 
-/*Carousel CSS */
-.carousel,
-.item,
-.active {
-        height:100%;
-}
-
-.carousel-inner {
-        height:100%;
-}
-
-.fill {
-        width:100%;
-        height:100%;
-        background-position: center;
-        background-size: cover;
-}
 /*POSTS FORM CSS */
 .post_field input[type=text], .post_field textarea {
 width: 100%;
@@ -342,7 +330,7 @@ aside {
 
 /* Homepage Header
     -------------------------------------------------- */
-#headerwrap {
+#homeheaderwrap {
     background: url('http://i.imgur.com/3hPdGW5.jpg') no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
@@ -364,30 +352,98 @@ aside {
     left: -30;
     position: relative;
 }
-#headerwrap h1 {
+#homeheaderwrap h1 {
     margin-top: 130px;
     color: #fff;
     font-size: 140px;
     font-weight: 700;
     letter-spacing: 3px;
 }
-#headerwrap h2 {
+#homeheaderwrap h2 {
     color: #fff;
     font-size: 50px;
     font-weight: 100;
     letter-spacing: 2px;
 }
-#headerwrap i {
+#homeheaderwrap i {
     font-size: 35px;
     color: #fff;
 }
-#headerwrap .spacer {
+#homeheaderwrap .spacer {
     margin-top: 220px;
 }
 
+/* ----------- About Page --------------- */
+#aboutheaderwrap {
+  background: url('http://i.imgur.com/DzxC2P2.jpg') no-repeat center top;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 750px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  right: -30;
+  left: -30;
+  position: relative;
+}
 
-/* RESPONSIVE CSS
-    -------------------------------------------------- */
+#aboutheaderwrap h1 {
+  margin-top: 130px;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+#aboutheaderwrap h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+/* ------------------- Blog -------------------------------- */
+
+.blog-full-width-post-index-image {
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+  text-align: center;
+  padding:100px 0;
+}
+
+.blog-full-width-post-image {
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+  text-align: center;
+  padding:200px 0;
+}
+
+.full-width-image-1 {
+  background: url(http://lorempixel.com/g/1920/500/) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.full-width-image-1 h1 {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 70;
+  letter-spacing: 2px;
+}
+/* ------------------- RESPONSIVE CSS -------------------------------- */
 
     @media (max-width: 979px) {
 
