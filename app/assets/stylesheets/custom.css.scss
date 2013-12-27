@@ -192,7 +192,7 @@ input, textarea, select, .uneditable-input {
 }
 
 input {
-  height: auto !important;
+  height: auto;
 }
 
 #error_explanation {
@@ -281,6 +281,7 @@ aside {
     max-width: 280px;
     padding: 15px;
     margin: 0 auto;
+    text-align: center center;
   }
   .form-signin .form-signin-heading, .form-signin {
     margin-bottom: 10px;
@@ -298,7 +299,9 @@ aside {
     z-index: 2;
   }
   .form-signin input[type="text"] {
+    height: 30px;
     margin-bottom: -1px;
+    padding-left: 7px;
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
     border-top-style: solid;
@@ -308,7 +311,9 @@ aside {
     border-color: #000;
   }
   .form-signin input[type="password"] {
-    margin-bottom: 10px;
+    height: 30px;
+    margin-bottom: 7px;
+    padding-left: 7px;
     border-bottom-left-radius: .5em;
     border-bottom-right-radius: .5em;
     border-top-style: none;
@@ -316,6 +321,13 @@ aside {
     border-bottom-style: solid;
     border-left-style: solid;
     border-color: #000;
+  }
+
+  .form-signin a{
+    color: white;
+  &:hover {
+    color: grey;
+    }
   }
   .form-signin-heading {
     color: #fff;

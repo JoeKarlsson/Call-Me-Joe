@@ -5,7 +5,7 @@
 <h1 class="form-signin-heading text-muted">Sign in</h1>
 
 <div class="container">
-  <div class="form-signin">
+  <div class="form-signin" style="">
     <%= form_for(:session, url: sessions_path) do |f| %>
 
         <%= f.text_field :email, :placeholder => "Email Address"%>
@@ -13,8 +13,9 @@
 
         <%= f.submit "Sign in", class: "btn btn-lg btn-primary btn-block" %>
     <% end %>
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p style="color: white;">New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
+  </br></br></br></br></br></br></br></br></br>
 </div>
 
-</br></br></br></br></br></br>
+
