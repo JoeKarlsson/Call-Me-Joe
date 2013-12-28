@@ -106,7 +106,6 @@ p {
 
 i {
     font-size: 70px;
-    text-align: center;
 }
 
 .centered {
@@ -441,6 +440,46 @@ aside {
     margin-top: 22px;
 }
 
+/* -------------------Service and Leadership --------------------- */
+
+#green {
+    background: #1abc9c;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#green h3 {
+    color: #fff;
+}
+#green p {
+    color: #fff;
+}
+#green i {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 22px;
+}
+
+
+/* -------------------Education --------------------- */
+
+#black {
+    background: #2f2f2f;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+#black h1 {
+    color: #fff;
+}
+
+#black p {
+    color: #fff;
+}
+
+#black i {
+    color: #fff;
+}
+
 /* ------------------- Blog -------------------------------- */
 
 .blog-full-width-post-index-image {
@@ -468,10 +507,38 @@ aside {
 
 .full-width-image-1 h1 {
   margin-top: 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 70;
+  color: white;
+  font-size: 60px;
+  font-weight: 80;
   letter-spacing: 2px;
+}
+
+.full-width-image-blog-home-page {
+  background: url(http://i.imgur.com/IWJLaFU.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  max-height: 200px;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.full-width-image-blog-home-page h1 {
+  margin-top: 0px;
+  color: white;
+  font-size: 60px;
+  font-weight: 80;
+  letter-spacing: 2px;
+}
+
+.full-width-image-blog-home-page i {
+  color: white;
+}
+
+.full-width-image-blog-home-page a {
+  color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 /* ------------------- Social Footer ------------------- */
