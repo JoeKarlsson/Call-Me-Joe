@@ -1,5 +1,4 @@
 @import "bootstrap";
-/*@import "bootstrap-responsive"; */
 /* universal */
 
 html {
@@ -105,6 +104,14 @@ p {
   font-family: 'Arvo';
 }
 
+i {
+    font-size: 70px;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -355,7 +362,7 @@ aside {
     -o-background-size: cover;
     background-size: cover;
     top: 0;
-    right: -30;
+    right: 0;
     left: -30;
     position: relative;
 }
@@ -381,14 +388,14 @@ aside {
     margin-top: 220px;
 }
 
-/* ----------- About Page --------------- */
+/* ----------- About Me --------------- */
 #aboutheaderwrap {
   background: url('http://i.imgur.com/DzxC2P2.jpg') no-repeat center top;
   margin-top: -10px;
   padding-top: 20px;
   background-attachment: relative;
-  background-position: center center;
-  min-height: 750px;
+  background-position: center 15%;
+  min-height: 400px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -418,6 +425,20 @@ aside {
   font-size: 50px;
   font-weight: 100;
   letter-spacing: 2px;
+}
+
+
+/* ------------------- Where I work -------------------------------- */
+#lg {
+    background: #ebebeb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#lg i {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 22px;
 }
 
 /* ------------------- Blog -------------------------------- */
@@ -452,57 +473,73 @@ aside {
   font-weight: 70;
   letter-spacing: 2px;
 }
-/* ------------------- RESPONSIVE CSS -------------------------------- */
 
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-   }
- 
-
-   @media (max-width: 767px) {
-
-      .navbar-inner {
-        margin: 0px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-
-    }
-  
+/* ------------------- Social Footer ------------------- */
+#sf {
+    display: block;
+    width: 100%}
+#sf .container {
+    width: 100%}
+#sf .col-lg-4 {
+    margin: 0;
+    padding: 15px;
+}
+#sf .lg {
+    background-color: #1abc9c;
+}
+#sf .dg {
+    background-color: #16a085;
+}
+#sf h4 {
+    color: #fff;
+}
+#sf p {
+    color: #fff;
+}
+#sf .ml {
+    margin-left: 30px;
+}
+#sf i {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+/* ------------------- Contact Footer ------------------- */
 
+#cf .container {
+    width: 100%}
+#cf .col-lg-8 {
+    margin: 0;
+    padding: 0;
+}
+#cf {
+    background: #2f2f2f;
+}
+#cf h4 {
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#cf p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 15px;
+}
+
+#cf a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 15px;
+}
+
+#cf .container {
+    width: 100%}
+#cf .col-lg-8 {
+    margin: 0;
+    padding: 0;
+}
