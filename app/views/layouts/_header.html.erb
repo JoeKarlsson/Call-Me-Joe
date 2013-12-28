@@ -18,6 +18,7 @@
         <li><%= link_to "Feed", microposts_path %></li>
         <% end %>
         <li><%= link_to "Blog", posts_path %></li>
+        <li><%= link_to "About", about_path %></li>
         <% if signed_in? %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=current_user.name %> <b class="caret"></b></a>

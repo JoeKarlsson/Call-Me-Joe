@@ -12,11 +12,12 @@
 </div><!-- /headerwrap -->
 </br>
 
-
-<div class="container" style="margin-top: 2%; margin-bottom: 4%">
-  <h1>About This Site</h1>
-  <h3 pull-left>Call Me Joe is the personal blog and web design playground for Minneapolis based web developer, SharePoint consultant, tech junkie, and photographer, Joe Carlson.</h3> </br>
-</div><!-- /container -->
+<div id="white">
+  <div class="container" style="margin-top: 2%; margin-bottom: 4%">
+    <h1>About This Site</h1>
+    <h3 pull-left>Call Me Joe is the personal blog and web design playground for Minneapolis based web developer, SharePoint consultant, tech junkie, and photographer, Joe Carlson.</h3> </br>
+  </div><!-- /container -->
+</div> <!-- /white -->
 
 
 
@@ -25,236 +26,21 @@
 </div><!-- /full-width-image-1 -->
 
 
-  <div id="green">
-  <div class="container desc">
-    <div class="row" style="padding-top: 5%; padding-bottom: 5%">
-      <div class="col-lg-2 col-lg-offset-1">
-        <h5>My Latest Work</h5>
+  <div id="projects" style="padding-top: 5%; padding-bottom: 5%">
+    <div class="container">
+      <div class="row">
+        <h1>My Latest Work</h1>
       </div>
-      <div class="col-lg-6">
-        <p><img class="img-responsive img-rounded" src="http://i.imgur.com/O4430e9.jpg" alt=""></p>
-      </div>
-      <div class="col-lg-3">
-        <h5>Twitter Clone</h5>
-        <p><more>My Twitter app is a proof of concept of some of the work I have been recently studying. Just like with real Twitter, you can follow/unfollow users, compose “tweets,” browse your Twitter feed, update your profile settings, manage your posts, browse in a mobile, tablet and desktop view, and much more! I'd recommend creating an account, following some other users, and tweeting!<br/><br/>
-        <sm><a href="/microposts"><i class="fa fa-link" style="font-size: 12px;"></i> Take me there!</a></sm></more> 
-        </p>
+      <div class="row">
+        <div class="col-lg-3">
+          <%= link_to image_tag("http://placehold.it/350x150&text=Twitter+Clone+Pic", alt: ""), "/microposts"%>
+        </div>
+        <div class="col-lg-6 col-lg-offset-1">
+          <h3>twitter clone</h3>
+          <p><more>My Twitter app is a proof of concept of some of the work I have been recently studying. Just like with real Twitter, you can follow/unfollow users, compose “tweets,” browse your Twitter feed, update your profile settings, manage your posts, and much more! I'd recommend creating an account, following some other users, and tweeting!<br/><br/>
+          <p><a> <%= link_to "Take me there!", "/microposts", class: "btn btn-black btn-lg" %></a></p>
+        </div>
       </div>
     </div>
-  </div>
-</div><!-- /container -->
-</div>
-
-
-  <!-- MAIN ABOUT PAGE IMAGE SECTION -->
-<div id="aboutheaderwrap">
-    <div class="col-lg-8">
-    </br>
-      <h1>About Me</h1>
-    </div>
+  </div><!-- row -->
 </div><!-- /headerwrap -->
-
-<div class="container" style="margin-top: 2%; margin-bottom: 4%">
-  <div class="row mt">
-    <div class="col-md-12">
-      <h1>Who is Joe?</h1>
-      <h3 pull-left>My name is Joe Carlson and I have a passion for helping people leverage cutting edge technology to help grow their stories. </h3> </br>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="col-lg-2 hidden-xs hidden-sm pull-right">
-        <img src="http://i.imgur.com/kpYkPBh.jpg" class="img-responsive" alt="Responsive image">
-      </div>
-      
-      <p class="lead">It is my mission is to better understand you and your unique story so we can creatively utilize the best tools for the job.</p>
-
-      <p>When I was growing up, my family had a Mac II. I spent hours on it creating elaborate stories and drawings on it with simple paint programs. It was amazing to me that I could use this little machine to create pictures and to share my ideas with others. This computer was able to spark conversations with my friends and family and instilled a lifelong interest in how technology can be used to bring people together. </p>
-
-      <p>Today, as a consultant at RBA Inc., I create new stories for businesses with technology. I have been successfully supporting small to large enterprises in the Twin Cities area with IT project consulting services and professional services across multiple technology and business areas. </p> 
-
-      <p>I graduated from Gustavus Adolphus College with a degree in Computer Science. During my four years at Gustavus I was highly involved around campus. I was Co-President of Epsilon Pi Alpha Fraternity. I represented Gustavus from the student perspective as a 'Gustavus Ambassador.' I was a member of the first year orientation process as a Gustie Greeter, and I worked as a Technology Helpline Associate at Gustavus Technology Services.</p>
-
-      <p>RBA is an award-winning, nationally-recognized Microsoft partner, that delivers unparalleled technology expertise combined with an uncompromising commitment to service. Currently on Inc. 500’s List of the country’s fastest-growing private companies and consistently named a Best Place to Work, RBA’s entrepreneurial spirit and rewarding employment experience attracts the industry's top technical talent.</p>
-    </div>
-  </div> <!-- Row -->
-</div> <!-- Container -->
-
-
-  <!-- Where I have worked -->
-  <div id="lg">
-    <div class="container">
-      <div class="row mt">
-        <div class="col-lg-12">
-          <h1>Where I have worked</h1>
-        </div><!-- col-lg-12 -->
-      </div><!-- row mt-->
-
-      <div class="row">
-        <div class="col-lg-4 centered">
-          <%= link_to image_tag("http://placehold.it/350x150&text=HD+RBA+Logo", alt: ""), "https://gustavus.edu/"%>
-          <h3>SharePoint Consultant</h3>
-          <div class="col-lg-12 hidden-xs hidden-sm">
-            </br>
-          </div>
-          <h5>RBA Inc.</h5>
-          <p>Work in partnership with clients, advising them how to use SharePoint in order to meet their business objectives, overcome problems, or to provide strategic guidance to organizations with regard to IT technology.</p>
-          <p><a> <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
-        </div>
-
-        <div class="col-lg-4 centered">
-          <%= link_to image_tag("http://placehold.it/350x150&text=HD+Toro+Logo", alt: ""), "https://gustavus.edu/"%>
-          <h3>Advanced Desktop Intern and Project Manager</h3>
-          <h5>Toro Company</h5>
-          <p>Tested and verified the compatibility of all applications used by the Toro Company on Windows 7. Ran test environments, and coordinated tests with current employees, and facilitated testing process. I also worked as Project Manager on a software development project.</p>
-          <p><a> <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
-          </div>  
-               
-        <div class="col-lg-4 centered">
-          <%= link_to image_tag("http://placehold.it/350x150&text=HD+GAC+Logo", alt: ""), "https://gustavus.edu/"%>
-          <h3>Technology Helpline Associate</h3>
-          <div class="col-lg-12 hidden-xs hidden-sm">
-            </br>
-          </div>
-          <h5>Gustavus Adolphus College Technology Center</h5>
-          <p>Communicated with students and staff, solved computer and technology related issues. Provided initial contact for people with service issues. Trained incoming employees on computer troubleshooting techniques.</p>
-          <p><a> <%= link_to "View Details", "http://www.linkedin.com/in/josephcarlson3", class: "btn btn-large btn-primary" %></a></p>
-        </div>  
-      </div> <!-- row -->
-    </div>  <!-- Container -->
-  </div> <!-- Where I work lg-->
-
-<div id="black">
-  <div class="container"  style="padding-bottom:2%;">
-    <!--EDUCATION DESCRIPTION -->
-    <div class="row">
-        <div class="col-lg-12">
-          <h1>Education</h1>
-        </div><!-- col-lg-12 -->
-      </div><!-- row -->
-    <div class="row centered">
-      <div class="col-lg-4 centered hidden-sm hidden-xs">
-        <i class="fa fa-flask"></i>
-      </div>
-      <div class="col-lg-4">
-        <p><strong>Bachelors of Arts in Computer Science</strong><br/>
-          Gustavus Adolphus College<br/>
-          Art History and Math minors<br/>
-          Graduated in May of 2012<br/>
-        </p>
-      </div>
-      <div class="col-md-4 centered hidden-sm hidden-xs">
-        <i class="fa fa-book" Style+></i>
-      </div>
-    </div> <!-- Row -->
-  </div> <!-- Container -->
-</div> <!-- black -->
-
-
-
-  <!-- Service and Leadership Experience -->
-  <div id="green"> 
-    <div class="container" style="padding-bottom: 2%;">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Service and Leadership</h1>
-        </div><!-- col-lg-12 -->
-      </div><!-- row -->
-
-      <div class="row mt" style="margins: 0 10%;">
-        <div class="col-lg-1 centered">
-          <i class="fa fa-lightbulb-o"></i>
-        </div>
-        <div class="col-lg-3">
-          <h3>Tronix Team</h3>
-          <h5>Instructor</h5>
-          <p>Worked with 30 students weekly to eliminate the achievement gap in STEM fields by providing hands-on electronic projects to diverse, underserved adolescent groups in Minneapolis.</p>
-        </div>
-
-        <div class="col-lg-1 centered">
-          <i class="fa fa-anchor"></i>
-        </div>
-        <div class="col-lg-3">
-          <h3>Epsilon Pi Alpha Fraternity </h3>
-          <h5>President</h5>
-          <p>Led and organized a group of 50+ highly involved men on campus. Helped organize our annual Take the Hill Triathlon and increased charitable revenue by over 57%. Mentored and developed leadership skills with group members by hosting educational events and speakers.</p>
-        </div>
-
-        <div class="col-lg-1 centered">
-          <i class="fa fa-users"></i>
-        </div>
-        <div class="col-lg-3">
-          <h3>Gustavus Orientation Program</h3>
-          <h5>Gustie Greeter</h5>
-          <p> Selected as a role model and leader to create a positive community for incoming Gustavus students. Planned and implemented educational and social programs, to support communication and interpersonal relationships for the personal success of the students.</p>
-        </div>
-      </div><!-- row -->
-    </div><!-- Service and Leadership Experience -->
-  </div><!-- Container -->
-</div><!-- Service and Leadership lg -->
-
-
-
-  <!-- Social Connection -->
-  <div class="container">
-    <div class="row mt">
-      <div class="col-lg-12">
-        <h1>Stay Connected</h1>
-        <p>Follow me on  social networks for all the latest updates, jokes, and annoucements.</p>
-      </div><!-- col-lg-12 -->
-    </div><!-- row -->
-  </div><!-- container -->
-
-  <section id="contact"></section>
-  <div id="sf">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 dg">
-          <h4 class="ml">LINKEDIN</h4>
-          <p class="centered"><a href="http://www.linkedin.com/in/josephcarlson3"><i class="fa fa-linkedin"></i></a></p>
-          <p class="ml">> Connect With Me</p>
-        </div>
-        <div class="col-lg-4 lg">
-          <h4 class="ml">GOOGLE +</h4>
-          <p class="centered"><a href="https://plus.google.com/u/0/+JoeKarlsson/posts"><i class="fa fa-google-plus"></i></a></p>
-          <p class="ml">> Add Me To Your Circle</p>
-        </div>
-        <div class="col-lg-4 dg">
-          <h4 class="ml">GITHUB</h4>
-          <p class="centered"><a href="https://github.com/JoeKarlsson1"><i class="fa fa-github"></i></a></p>
-          <p class="ml">> Follow Me</p>
-        </div>
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- Social Footer -->
-
-
-
-  <!-- CONTACT FOOTER -->
-  <div id="cf">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div id="mapwrap">
-            <iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x52b3329f137bed7b%3A0xbbcec22843089177!2sPortland+Ave+%26+7th+St+S%2C+Minneapolis%2C+MN!5e0!3m2!1sen!2sus!4v1388179131891"></iframe>
-          </div>  
-        </div><!--col-lg-8-->
-
-        <div class="col-lg-4">
-          <h4>ADDRESS<br/>Home Office</h4>
-          <br>
-          <p>
-            South Seventh Street and Portland Avenue</br>
-            Minneapolis, Minnesota
-          </p>
-          <p>
-            M:  612.600.7305<br/>
-            O:  952.404.2676<br/>
-            E:<a href="mailto:josephcarlson1@gmail.com">josephcarlson1@gmail.com</a>
-          </p>
-          <p>Being located in the heart of downtown Minneapolis helps me stay connected.</p>
-        </div><!--col-lg-4-->
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- Contact Footer -->
-</div>

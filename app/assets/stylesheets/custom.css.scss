@@ -76,6 +76,7 @@ footer ul li {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato';
   line-height: 1;
+  color: black;
 }
 
 h1 {
@@ -387,6 +388,46 @@ aside {
     margin-top: 220px;
 }
 
+/* -------------------My Latest work --------------------- */
+
+#projects {
+    background: #1abc9c;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#projects h3, h1 {
+    color: #fff;
+}
+#projects p {
+    color: #fff;
+}
+#projects i {
+    color: #fff;
+    font-size: 25px;
+}
+#projects a {
+    color: white;
+    font-size: 25px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-black {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    font-weight: 300;
+}
+.btn-black:hover, .btn-black:focus, .btn-black:active, .btn-black.active, .open .dropdown-toggle.btn-black {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    font-weight: 300;
+}
+
+
 /* ----------- About Me --------------- */
 #aboutheaderwrap {
   background: url('http://i.imgur.com/DzxC2P2.jpg') no-repeat center top;
@@ -394,7 +435,7 @@ aside {
   padding-top: 20px;
   background-attachment: relative;
   background-position: center 15%;
-  min-height: 400px;
+  min-height: 600px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -434,9 +475,12 @@ aside {
     padding-bottom: 50px;
 }
 
+#lg h1 {
+    color: black;
+}
 #lg i {
-    color: #fff;
-    font-size: 35px;
+    color: black;
+    font-size: 50px;
     margin-top: 22px;
 }
 
@@ -455,10 +499,17 @@ aside {
 }
 #green i {
     color: #fff;
-    font-size: 35px;
-    margin-top: 22px;
+    font-size: 25px;
+}
+#green a {
+    color: white;
+    font-size: 25px;
 }
 
+#green btn-large btn-primary {
+  color: black;
+
+}
 
 /* -------------------Education --------------------- */
 
@@ -466,9 +517,8 @@ aside {
     background: #2f2f2f;
     padding-top: 35px;
     padding-bottom: 35px;
-    text-align: center;
 }
-#black h1 {
+#black h1, h2, h3, h4, h5 {
     color: #fff;
 }
 
@@ -478,6 +528,28 @@ aside {
 
 #black i {
     color: #fff;
+    font-sze: 40px;
+}
+
+
+/* -------------------White --------------------- */
+
+#white {
+    background: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#white h1, h2, h3, h4, h5 {
+    color: black;
+}
+
+#white p {
+    color: black;
+}
+
+#white i {
+    color: black;
+    font-sze: 40px;
 }
 
 /* ------------------- Blog -------------------------------- */
@@ -517,9 +589,9 @@ aside {
   background: url(http://i.imgur.com/IWJLaFU.jpg) no-repeat center center;
   background-size: cover;
   background-position: center center;
-  max-height: 200px;
+  min-height: 100px;
   text-align: center;
-  padding: 200px 0;
+  padding: 150px 0;
 }
 
 .full-width-image-blog-home-page h1 {
@@ -528,6 +600,9 @@ aside {
   font-size: 60px;
   font-weight: 80;
   letter-spacing: 2px;
+}
+.full-width-image-blog-home-page a {
+  font-style: normal;
 }
 
 .full-width-image-blog-home-page i {
