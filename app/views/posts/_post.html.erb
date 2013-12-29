@@ -3,7 +3,7 @@
 	   <div class="row">
 		  <div class="col-lg-12 section">
 		  	<!--<%= image_tag post.image_url %>-->
-		    <h1><%= link_to post.title, post %></h1>
+		    <h1 style="color:black;"><%= link_to post.title, post %></h1>
 		    <i class="icon-user"></i> by Joe Carlson </br>
 			<div class="timestamp"> 
 			  Posted <%= time_ago_in_words(post.created_at) %> ago.

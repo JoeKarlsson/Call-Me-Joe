@@ -12,7 +12,8 @@ body {
 
 section {
   overflow: auto;
-  margin: 50px 0;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 textarea {
@@ -215,15 +216,6 @@ input {
   @extend .error;
 }
 
-/*POSTS FORM CSS */
-.post_field input[type=text], .post_field textarea {
-width: 100%;
-}
-
-.comment_field input[type=text], .comment_field textarea {
-width: 50%;
-height:50 px;
-}
 
 /* Users index */
 
@@ -266,6 +258,13 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+/* Sign Up */
+
+#signup input{
+  width: 50%;
+  text-align: left;
 }
 
 /*Sign In Page ------------------------------------------ */
@@ -395,7 +394,10 @@ aside {
     padding-top: 35px;
     padding-bottom: 35px;
 }
-#projects h3, h1 {
+#projects h1 {
+    color: #fff;
+}
+#projects h3 {
     color: #fff;
 }
 #projects p {
@@ -424,7 +426,7 @@ aside {
     color: #fff;
     background-color: black;
     border-color: black;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 
@@ -467,6 +469,17 @@ aside {
   letter-spacing: 2px;
 }
 
+@media all and (max-width: 500px) {
+    #aboutheaderwrap h1 {
+        font-size: 100px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    #aboutheaderwrap h1 {
+        font-size: 80px;
+    }
+}
 
 /* ------------------- Where I work -------------------------------- */
 #lg {
@@ -518,12 +531,18 @@ aside {
     padding-top: 35px;
     padding-bottom: 35px;
 }
-#black h1, h2, h3, h4, h5 {
+#black h1 {
+    color: #fff;
+}
+#black h2 {
+    color: #fff;
+}
+#black h3 {
     color: #fff;
 }
 
 #black p {
-    color: #fff;
+    color: grey;
 }
 
 #black i {
@@ -622,7 +641,7 @@ aside {
     width: 100%}
 #sf .container {
     width: 100%}
-#sf .col-lg-4 {
+#sf .col-lg-3 {
     margin: 0;
     padding: 15px;
 }

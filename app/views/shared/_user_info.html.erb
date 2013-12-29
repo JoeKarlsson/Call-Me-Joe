@@ -2,9 +2,9 @@
 <h1>
   <%= current_user.name %>
 </h1>
-<div class =".col-md-6">
+<div>
   <%= link_to "view my profile", current_user %>
 </div>
-<div class =".col-md-6">
+<div>
   <%= pluralize(current_user.microposts.count, "micropost") %>
 </div>
