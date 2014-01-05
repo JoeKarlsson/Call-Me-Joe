@@ -49,7 +49,7 @@
 		  <%= render @post.comments %>
 		</div>
     </div><!--row-->
-    <% if signed_in? %>
+    
 		<div class="row">
 			<div class="col-lg-4">	
 			    <div class="comment_field">
@@ -62,9 +62,6 @@
 			    </div>
 			</div>
 		</div> <!--row-->
-	<% else %>
-		<p><a> <%= link_to "Sign in to post comment", "/signin", class: "btn btn-large btn-primary" %></a></p>
-	<%end%>
  </div> <!--container-->
 
 

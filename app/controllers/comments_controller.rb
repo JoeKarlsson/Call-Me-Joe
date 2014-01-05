@@ -1,6 +1,5 @@
 class CommentsController < ApplicationController
-before_action :admin_user, only: [:create, :destroy]
-before_action :signed_in_user, only: :create
+before_action :admin_user, only: [:destroy]
 
   def create
     @post = Post.find(params[:post_id])
