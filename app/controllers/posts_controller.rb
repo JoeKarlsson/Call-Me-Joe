@@ -3,8 +3,8 @@ class PostsController < ApplicationController
   before_action :correct_user,   only: :destroy
     
   def index
-  @posts = Post.all
-  @posts = Post.paginate(page: params[:page], :per_page => 5)
+    @post = Post.order("created_at DESC").limit(1)
+    @posts = Post.paginate(page: params[:page], :per_page => 10).offset(1)
   end
 
   # GET /posts/1
@@ -18,11 +18,6 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-  end
-
-  def recent
-    @post = Post.find(params[:id])
-    @posts = Post.includes(:comments).order("created_at desc").limit(3)
   end
 
   # GET /posts/1/edit

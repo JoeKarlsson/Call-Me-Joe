@@ -2,6 +2,7 @@ class StaticPagesController < ApplicationController
   before_action :signed_in_user, only: [:micropostsHome]
 
   def home
+    @posts = Post.order("created_at DESC").limit(3)
   end
 
   def help

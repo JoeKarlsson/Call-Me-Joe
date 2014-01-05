@@ -1,27 +1,24 @@
-<div>
-	<div class="container" style="margin-bottom: 2%;">
-	   <div class="row">
-		  <div class="col-lg-12 section">
-		  	<!--<%= image_tag post.image_url %>-->
-		    <h1 style="color:black;"><%= link_to post.title, post %></h1>
-		    <div class="timestamp"> 
-			  Posted <%= time_ago_in_words(post.created_at) %> ago.
-			</div> </br>
-		    <p class="lead section-lead"><%= truncate post.content, length: 500, separator: ' '  %></p>
-			</br>
-			<h4><strong><%= link_to 'Read More', post, class: 'btn btn-large btn-primary' %></strong></h4>
-		  </div>
-	   </div> <!--row-->
-	</div>
+<div class="blog-full-width-post-index-image" style='background-image: url(<%=post.image_url %>); '>
+</div>
 
+<div class="container" style="margin-bottom: 2%;">
+   <div class="row">
+	  <div class="col-lg-12 section">
+	  	<!--<%= image_tag post.image_url %>-->
+	    <h1 style="color:black;"><%= link_to post.title, post %></h1>
+	    <div class="timestamp"> 
+		  Posted <%= time_ago_in_words(post.created_at) %> ago.
+		</div> </br>
+	    <p class="lead section-lead"><%= truncate post.content, length: 500, separator: ' '  %></p>
+		</br>
+		<h4><strong><%= link_to 'Read More', post, class: 'btn btn-large btn-primary' %></strong></h4>
+	  </div>
+   </div> <!--row-->
+</div>
 
-	<div class="blog-full-width-post-index-image" style='background-image: url(<%=post.image_url %>); '>
-	</div>
-
-	<div class="container">
-	  <% if current_user && current_user.admin? %>
-		<%= link_to "Delete", post, method: :destroy, data: { confirm: "You sure?" } %>
-		<%= link_to 'Edit', edit_post_path(post) %></td>
-	  <% end %>
-	</div>
+<div class="container">
+  <% if current_user && current_user.admin? %>
+	<%= link_to "Delete", post, method: :destroy, data: { confirm: "You sure?" } %> | 
+	<%= link_to 'Edit', edit_post_path(post) %></td>
+  <% end %>
 </div>

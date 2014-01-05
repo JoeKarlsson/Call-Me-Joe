@@ -34,11 +34,11 @@
     </div> <!--row-->
     <div class="container">
 	  	<div class="row">  
+	  		<%= link_to 'Back to Posts', posts_path %>
 			<% if current_user && current_user.admin? %>
-				<%= link_to "Delete", @post, method: :destroy, data: { confirm: "You sure?" } %>
+				 | <%= link_to "Delete", @post, method: :destroy, data: { confirm: "You sure?" } %> | 
 				<%= link_to 'Edit', edit_post_path(@post) %></td>
 	  		<% end %>
-	  		<%= link_to 'Back to Posts', posts_path %>
 	  	</div><br/>
 	</div>
 
