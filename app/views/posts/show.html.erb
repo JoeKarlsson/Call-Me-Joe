@@ -17,31 +17,54 @@
 </script>
 <!-- AddThis Smart Layers END -->
 
-<div class="blog-full-width-post-image" style='background-image: url(<%=@post.image_url %>); '>
-</div>
+<div class="blog-full-width-post-image" style='background-image: url(<%=@post.image_url %>);'></div>
 
-<div>
-	<div class="container">
-	   <div class="row">
-		  <div class="col-lg-12 section">
-		    <h1><%= @post.title %></h1>
-		    <i class="icon-user"></i> by Joe Carlson </br>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 section">
+	    	<h1><%= @post.title %></h1>
+	    	<i class="icon-user"></i> by Joe Carlson </br>
 			<div class="timestamp"> 
-			  Posted <%= time_ago_in_words(@post.created_at) %> ago.
-		    </div> </br>
-		    <p class="lead section-lead">
-		      <%= @post.content.gsub(/\n/, '<br/>').html_safe %>
-			</p>
-			</br>
-		  </div>
-	   </div> <!--row-->
+		  		Posted <%= time_ago_in_words(@post.created_at) %> ago.
+	    	</div> </br>
+	    	<p class="lead section-lead">
+	      	<%= @post.content.gsub(/\n/, '<br/>').html_safe %>
+			</p></br>
+	  	</div>
+    </div> <!--row-->
+    <div class="container">
+	  	<div class="row">  
+			<% if current_user && current_user.admin? %>
+				<%= link_to "Delete", @post, method: :destroy, data: { confirm: "You sure?" } %>
+				<%= link_to 'Edit', edit_post_path(@post) %></td>
+	  		<% end %>
+	  		<%= link_to 'Back to Posts', posts_path %>
+	  	</div><br/>
 	</div>
 
-	<div class="container">
-	  <% if current_user && current_user.admin? %>
-		<%= link_to "Delete", @post, method: :destroy, data: { confirm: "You sure?" } %>
-		<%= link_to 'Edit', edit_post_path(@post) %></td>
-	  <% end %>
-	  <%= link_to 'Back to Posts', posts_path %>
-	</div>
-</div>
+	<!-- Comments -->
+	<div class="row">
+		<div class="col-lg-12">	
+	  	  <h3>Comments (<%= @post.comments.count %>)</h3>
+		  <%= render @post.comments %>
+		</div>
+    </div><!--row-->
+    <% if signed_in? %>
+		<div class="row">
+			<div class="col-lg-4">	
+			    <div class="comment_field">
+					<%= form_for([@post, @post.comments.build]) do |f| %>
+			    		<div class="comment_field">
+				    		<%= f.text_area :content, placeholder: "Compose comment..." %>
+				  		</div>
+			    		<%= f.submit "Post", class: "btn btn-large btn-primary" %>
+			    	<% end %>
+			    </div>
+			</div>
+		</div> <!--row-->
+	<% else %>
+		<p><a> <%= link_to "Sign in to post comment", "/signin", class: "btn btn-large btn-primary" %></a></p>
+	<%end%>
+ </div> <!--container-->
+
+

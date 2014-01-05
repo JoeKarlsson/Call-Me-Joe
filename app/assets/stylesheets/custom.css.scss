@@ -25,6 +25,7 @@ textarea {
 }
 
 .center h1 {
+  font-family: 'Droid Sans', sans-serif;
   margin-bottom: 10px;
 }
 
@@ -75,16 +76,16 @@ footer ul li {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato';
+  font-family: 'Droid Sans', sans-serif;
   line-height: 1;
   color: black;
 }
 
 h1 {
-  font-family: 'Lato', bold;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -97,14 +98,10 @@ h2 {
 }
 
 p {
-  font-family: 'Arvo';
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
-p {
-  font-family: 'Arvo';
-}
 
 i {
     font-size: 70px;
@@ -366,6 +363,7 @@ aside {
     position: relative;
 }
 #homeheaderwrap h1 {
+    font-family: 'Droid Sans', sans-serif;
     margin-top: 40px;
     color: #fff;
     font-size: 140px;
@@ -373,6 +371,7 @@ aside {
     letter-spacing: 3px;
 }
 #homeheaderwrap h2 {
+    font-family: 'Droid Sans', sans-serif;
     margin-top: 80px;
     color: #fff;
     font-size: 50px;
@@ -454,6 +453,7 @@ aside {
 }
 
 #aboutheaderwrap h1 {
+  font-family: 'Droid Sans', sans-serif;
   margin-top: 40px;
   margin-left: 20px;
   color: #fff;
@@ -597,6 +597,7 @@ aside {
 }
 
 .full-width-image-1 h1 {
+  font-family: 'Droid Sans', sans-serif;
   margin-top: 40px;
   color: white;
   font-size: 60px;
@@ -614,14 +615,12 @@ aside {
 }
 
 .full-width-image-blog-home-page h1 {
+  font-family: 'Droid Sans', sans-serif;
   margin-top: 0px;
   color: white;
   font-size: 60px;
   font-weight: 80;
   letter-spacing: 2px;
-}
-.full-width-image-blog-home-page a {
-  font-style: normal;
 }
 
 .full-width-image-blog-home-page i {
@@ -629,11 +628,21 @@ aside {
 }
 
 .full-width-image-blog-home-page a {
+  font-style: normal;
   color: white;
   &:hover {
     color: white;
   }
 }
+
+
+/* ------------------- Comments ------------------- */
+
+#comments {
+  
+}
+
+
 
 /* ------------------- Social Footer ------------------- */
 #sf {
@@ -703,4 +712,27 @@ aside {
 #cf .col-lg-8 {
     margin: 0;
     padding: 0;
+}
+/* ------------------- Flickr ------------------- */
+
+.flickr ul
+{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+.flickr ul li 
+{
+        border-bottom: 0;
+        margin: 0;
+        padding: 0;
+}
+
+.flickr_photo
+{
+        width: 75px;
+        height: 75px;
+        padding: 12px 10px 32px 13px;
+        margin: 0;
+        background: #fff url(../images/pixellated/polaroid.jpg) no-repeat;
 }

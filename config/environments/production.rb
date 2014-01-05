@@ -80,4 +80,7 @@ CallMeJoe::Application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
   # config.force_ssl = true
+
+  config.action_mailer.default_url_options = { :host => 'http://www.callmejoe.net' }
+
 end

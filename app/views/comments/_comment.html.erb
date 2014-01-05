@@ -1,0 +1,11 @@
+
+  <div class=".col-md-6" style="content"><%= comment.content %></div>
+  <div class=".col-md-6" style="color: grey;">
+    Posted <%= time_ago_in_words(comment.created_at) %> ago.
+  <% if current_user && current_user.admin? %>
+  	<%= link_to 'delete', [comment.post, comment],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+  <%end%>
+   </div>
+</br>
