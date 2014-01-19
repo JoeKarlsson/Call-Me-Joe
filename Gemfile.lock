@@ -67,12 +67,17 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta-tags (1.5.0)
+      actionpack
     mime-types (1.25.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.4)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     nokogiri (1.6.1-x86-mingw32)
       mini_portile (~> 0.5.0)
+    open-meta-tags (0.4.0)
     pg (0.15.1-x86-mingw32)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -166,6 +171,8 @@ DEPENDENCIES
   friendly_id
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  meta-tags
+  open-meta-tags
   pg (= 0.15.1)
   rails (= 4.0.2)
   rails_12factor (= 0.0.2)

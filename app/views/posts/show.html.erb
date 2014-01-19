@@ -1,4 +1,21 @@
 <% provide(:title, @post.title) %>
+
+<% set_meta_tags :description => @post.description,
+                 :keywords => @post.keywords %>
+
+<% set_meta_tags :og => {
+	:type => 'article',
+    :description => @post.description,
+    :keywords => @post.keywords,
+    :image => @post.image_url, 
+    :url => 'www.callmejoe.net' + request.fullpath,
+    :admins => "joe.carlson3"
+    } %> 
+
+<% set_meta_tags :twitter => {
+  :card => "summary_large_image"
+} %>
+
 <!-- Blog Posts on Page -->
 
 <!-- AddThis Smart Layers BEGIN -->

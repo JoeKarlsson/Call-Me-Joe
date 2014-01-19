@@ -11,6 +11,7 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'font-awesome-sass'
 gem 'friendly_id'
+gem 'meta-tags', :require => 'meta_tags'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

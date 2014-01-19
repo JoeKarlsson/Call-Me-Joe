@@ -22,6 +22,15 @@
     <%= post_form.label :content  %><br />
     <%= post_form.text_area :content, :rows=>"25" %>
   </div>	
+  <div class="field">
+    <%= post_form.label :keywords  %><br />
+    <%= post_form.text_area :keywords %>
+  </div>
+  <div class="field">
+    <%= post_form.label :description  %><br />
+    <%= post_form.text_area :description %>
+  </div>
+
   
   <div class="actions">
     <%= post_form.submit %>

@@ -22,7 +22,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
   # POST /posts
@@ -38,7 +38,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
     if @post.update_attributes(post_params)
       flash[:success] = "Post updated"
       redirect_to @post
@@ -50,7 +50,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post = Post.find(post_params[:id]).destroy
+    @post = Post.friendly.find(post_params[:id]).destroy
     flash[:success] = "Post deleted."
     redirect_to 'index'
   end
@@ -58,11 +58,11 @@ class PostsController < ApplicationController
   private
 
     def post_params
-      params.require(:post).permit(:content, :title, :image_url)
+      params.require(:post).permit(:content, :title, :image_url, :description, :keywords)
     end
 
     def correct_user
-      @post = current_user.posts.find_by(id: params[:id])
+      @post = current_user.posts.friendly.find_by(id: params[:id])
       redirect_to root_url if @post.nil?
     end
 
