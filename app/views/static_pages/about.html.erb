@@ -1,5 +1,21 @@
 <% provide(:title, 'About') %>
 
+<% set_meta_tags :description => "Call Me Joe is the personal blog and web design playground for Minneapolis based web developer, SharePoint consultant, tech junkie, and photographer, Joe Carlson." ,
+                 :keywords => "Joe, Carlson, Call Me Joe, Blog, Minneapolis, Minnesota, Technology, Web, SharePoint, Home, Gustavus, RBA, Internet, Entreprenuer, Young, Photography" %>
+
+<% set_meta_tags :og => {
+  :type => 'article',
+  :description => "Call Me Joe is the personal blog and web design playground for Minneapolis based web developer, SharePoint consultant, tech junkie, and photographer, Joe Carlson.",
+  :keywords => "Joe, Carlson, Call Me Joe, Blog, Minneapolis, Minnesota, Technology, Web, SharePoint, Home, About Me, Gustavus, RBA, Internet, Entreprenuer, Young, Photography",
+  :image => 'http://i.imgur.com/DzxC2P2.jpg', 
+  :url => 'www.callmejoe.net/about',
+  :admins => "joe.carlson3"
+} %> 
+
+<% set_meta_tags :twitter => {
+  :card => "summary_large_image"
+} %>
+
 <!-- MAIN ABOUT PAGE IMAGE SECTION -->
 <div id="aboutheaderwrap">
     <div class="col-lg-8">

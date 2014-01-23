@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 before_action :admin_user, only: [:destroy]
 
   def create
-    @post = Post.find(params[:post_id])
+    @post = Post.friendly.find(params[:post_id])
     @comment = @post.comments.build(comment_params)
     if @comment.save
       flash[:success] = "Comment Created!"
@@ -14,7 +14,7 @@ before_action :admin_user, only: [:destroy]
   end
  
   def destroy
-    @comment = Comment.find(params[:id])
+    @comment = Comment.friendly.find(params[:id])
     @comment.destroy 
     redirect_to(@comment.post)
   end
