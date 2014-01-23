@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
+    <!--Sets Metadata-->
     <%= display_meta_tags %>
 
     <%= favicon_link_tag '/favicon.ico'%>
@@ -12,8 +13,11 @@
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+    <!--Recognizes mobile devices-->
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
+    <!--CKEditor-->
+    <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 
