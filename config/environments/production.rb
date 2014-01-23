@@ -1,6 +1,7 @@
 CallMeJoe::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.assets.precompile += [ /.ckeditor.js/, /.config.js/, /.cs.js/, /.editor.css/, /.plugin.js/, /.en.js/, /.contents.css/, /.default.js/ ]
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
