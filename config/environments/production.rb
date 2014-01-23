@@ -1,6 +1,5 @@
 CallMeJoe::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.assets.precompile += [ /.ckeditor.js/, /.config.js/, /.cs.js/, /.editor.css/, /.plugin.js/, /.en.js/, /.contents.css/, /.default.js/ ]
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -60,7 +59,7 @@ CallMeJoe::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  # config.assets.precompile += %w( search.js )
+  # config.assets.precompile += %w( .ckeditor.js )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
