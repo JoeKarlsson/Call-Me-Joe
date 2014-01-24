@@ -12,8 +12,7 @@ gem 'faker', '1.1.2'
 gem 'font-awesome-sass'
 gem 'friendly_id'
 gem 'meta-tags', :require => 'meta_tags'
-gem 'paperclip'
-gem 'ckeditor'
+gem 'ckeditor_rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
