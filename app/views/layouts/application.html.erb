@@ -16,6 +16,9 @@
     <!--Recognizes mobile devices-->
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
+    <!--Google Translate https://translate.google.com/manager-->
+    <meta name="google-translate-customization" content="5b9be33a7aacbb7-bad5e9e7aa8d26b1-g938f85f48076d2a6-11"></meta>
+
     <!--CKEditor-->
     <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
 
@@ -31,6 +34,7 @@
 
   <body>
     <%= render 'layouts/header' %>
+    
     <div>
       <% flash.each do |key, value| %>
         <%= content_tag(:div, value, class: "alert alert-#{key}") %>

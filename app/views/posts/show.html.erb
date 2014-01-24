@@ -63,7 +63,10 @@
 	<div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'callmejoe'; // required: replace example with your forum shortname
+        var disqus_shortname = 'Call Me Joe'; // required: replace example with your forum shortname
+    	var disqus_identifier = @post.id;
+    	var disqus_title = @post.title;
+    	var disqus_url = 'http://www.callmejoe.net' + request.fullpath;
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -77,8 +80,10 @@
     
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'callmejoe'; // required: replace example with your forum shortname
-
+        var disqus_shortname = 'Call Me Joe'; // required: replace example with your forum shortname
+    	var disqus_identifier = @post.id;
+    	var disqus_title = @post.title;
+    	var disqus_url = 'http://www.callmejoe.net' + request.fullpath;
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function () {
         var s = document.createElement('script'); s.async = true;
