@@ -83,5 +83,4 @@ CallMeJoe::Application.configure do
 
   config.action_mailer.default_url_options = { :host => 'http://www.callmejoe.net' }
 
-  rake assets:precompile:all
 end
