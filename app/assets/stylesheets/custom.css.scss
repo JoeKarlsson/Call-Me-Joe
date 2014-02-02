@@ -37,7 +37,7 @@ textarea {
   margin-right: 10px;
   font-size: 1.9em;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: -1px;
   padding-top: 12px;
   font-weight: bold;
@@ -45,7 +45,7 @@ textarea {
 }
 
 #logo:hover {
-  color: #fff;
+  color: grey;
   text-decoration: none;
   background-color: transparent
 }
@@ -421,7 +421,7 @@ aside {
 .blurImg {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 500px;
   z-index: -1;
   top: 0;
   left: 0;
@@ -429,7 +429,7 @@ aside {
 .blurImg > div {
   position: fixed;
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -453,7 +453,6 @@ header > div {
 
   margin: 0 auto;
   padding-top: 150px;
-  height: 150px;
   text-align: center;
   color: White;
 }
@@ -507,7 +506,7 @@ header > div a:hover {
 }
 #homeheaderwrap h2 {
     font-family: 'Droid Sans', sans-serif;
-    margin-top: -97px;
+    margin-top: -50px;
     color: #fff;
     font-size: 50px;
     font-weight: 100;
@@ -538,7 +537,20 @@ header > div a:hover {
         font-size: 40px;
     }
 }
+/* -------------------DogeCoin widget --------------------- */
 
+.COINWIDGETCOM_CONTAINER {
+height: 18px;
+display: block;
+font-family: arial;
+line-height: 12px;
+margin-right: 5px;
+}
+
+.COINWIDGETCOM_CONTAINER>span {
+vertical-align: middle;
+height: 30px;
+}
 /* -------------------My Latest work --------------------- */
 
 .blog-homepage-image {
@@ -800,13 +812,11 @@ header > div a:hover {
 
 .blog-full-width-post-header-index-image h1 {
   font-family: 'Droid Sans', sans-serif;
-  margin-top: 40px;
-  color: white;
-  font-size: 60px;
-  font-weight: 80;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
   letter-spacing: 2px;
   -webkit-text-stroke: 1px black;
-  color: white;
   text-shadow:
   3px 3px 0 #000,
   -1px -1px 0 #000,  
@@ -817,7 +827,15 @@ header > div a:hover {
 
 .blog-full-width-post-header-index-image  a {
   text-decoration: none;
-  color: white;
+  text-transform: capitalize;
+  margin-top: 0px;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  &:hover {
+    color: grey;
+    }
 }
 
 .blog-full-width-post-index-image {
@@ -836,36 +854,17 @@ header > div a:hover {
   padding:200px 0;
 }
 
-.full-width-image-blog-home-page {
-  background: url(http://i.imgur.com/IWJLaFU.jpg) no-repeat center center;
-  background-size: cover;
-  background-position: center center;
-  min-height: 100px;
-  text-align: center;
-  padding: 150px 0;
+@media all and (max-width: 500px) {
+    .blog-full-width-post-header-index-image  a{
+        font-size: 100px;
+    }
 }
 
-.full-width-image-blog-home-page h1 {
-  font-family: 'Droid Sans', sans-serif;
-  margin-top: 0px;
-  color: white;
-  font-size: 60px;
-  font-weight: 80;
-  letter-spacing: 2px;
+@media all and (max-width: 300px) {
+    .blog-full-width-post-header-index-image  a {
+        font-size: 80px;
+    }
 }
-
-.full-width-image-blog-home-page i {
-  color: white;
-}
-
-.full-width-image-blog-home-page a {
-  font-style: normal;
-  color: white;
-  &:hover {
-    color: white;
-  }
-}
-
 
 /* ------------------- Social Footer ------------------- */
 #sf {
@@ -936,26 +935,207 @@ header > div a:hover {
     margin: 0;
     padding: 0;
 }
-/* ------------------- Flickr ------------------- */
+/* ------------------- Loading screen ------------------- */
 
-.flickr ul
-{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-}
-.flickr ul li 
-{
-        border-bottom: 0;
-        margin: 0;
-        padding: 0;
+
+#loadingMsg{
+position: absolute;
+top: 0;
+left: 0;
+color:#ffffff;
+width: 100%;
+height:100%;
+text-align: center;
+z-index: 2000;
+background: rgba(255, 255, 255, .75);
 }
 
-.flickr_photo
-{
-        width: 75px;
-        height: 75px;
-        padding: 12px 10px 32px 13px;
-        margin: 0;
-        background: #fff url(../images/pixellated/polaroid.jpg) no-repeat;
+.loading,
+.loading:before,
+.loading:after {
+    -moz-animation: loading 8s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -webkit-animation: loading 8s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+  -webkit-animation: loading 8s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+  background: #e12a44;
+  box-sizing: border-box;
+  display: block;
+  font: 0/0 a;
+  height: 40px;
+  left: 50%;
+  margin: -20px 0 0 -5px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+.loading:before,
+.loading:after{
+  content: '';
+  display: block;
+  position: absolute;
+    -webkit-transform: rotate(0deg);
+  left: -10px
+}
+.loading:after {
+  left: auto;
+  right: -15px;
+}
+
+  @-moz-keyframes 'loading' {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    7.5% {
+      -moz-transform: rotate(0deg);
+    }
+    12.5% {
+      -moz-transform: rotate(90deg);
+    }
+    20% {
+      -moz-transform: rotate(90deg);
+    }
+    25% {
+      -moz-transform: rotate(180deg);
+    }
+    32.5% {
+      -moz-transform: rotate(180deg);
+    }
+    37.5% {
+      -moz-transform: rotate(270deg);
+    }
+    45% {
+      -moz-transform: rotate(270deg);
+    }
+    50% {
+      -moz-transform: rotate(180deg);
+    }
+    57.5% {
+      -moz-transform: rotate(180deg);    
+    }
+    62.5% {
+      -moz-transform: rotate(270deg);
+    }
+    70% {
+      -moz-transform: rotate(270deg);
+    }
+    75% {
+      -moz-transform: rotate(360deg);
+    }
+    82.5% {
+      -moz-transform: rotate(360deg);
+    }
+    87.5% {
+      -moz-transform: rotate(270deg);
+    }
+    95% {
+      -moz-transform: rotate(270deg);
+    }
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes 'loading' {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    7.5% {
+      -webkit-transform: rotate(0deg);
+    }
+    12.5% {
+      -webkit-transform: rotate(90deg);
+    }
+    20% {
+      -webkit-transform: rotate(90deg);
+    }
+    25% {
+      -webkit-transform: rotate(180deg);
+    }
+    32.5% {
+      -webkit-transform: rotate(180deg);
+    }
+    37.5% {
+      -webkit-transform: rotate(270deg);
+    }
+    45% {
+      -webkit-transform: rotate(270deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+    }
+    57.5% {
+      -webkit-transform: rotate(180deg);    
+    }
+    62.5% {
+      -webkit-transform: rotate(270deg);
+    }
+    70% {
+      -webkit-transform: rotate(270deg);
+    }
+    75% {
+      -webkit-transform: rotate(360deg);
+    }
+    82.5% {
+      -webkit-transform: rotate(360deg);
+    }
+    87.5% {
+      -webkit-transform: rotate(270deg);
+    }
+    95% {
+      -webkit-transform: rotate(270deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+@keyframes 'loading' {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  7.5% {
+    -webkit-transform: rotate(0deg);
+  }
+  12.5% {
+    -webkit-transform: rotate(90deg);
+  }
+  20% {
+    -webkit-transform: rotate(90deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+  }
+  32.5% {
+    -webkit-transform: rotate(180deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(270deg);
+  }
+  45% {
+    -webkit-transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  57.5% {
+    -webkit-transform: rotate(180deg);    
+  }
+  62.5% {
+    -webkit-transform: rotate(270deg);
+  }
+  70% {
+    -webkit-transform: rotate(270deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+  }
+  82.5% {
+    -webkit-transform: rotate(360deg);
+  }
+  87.5% {
+    -webkit-transform: rotate(270deg);
+  }
+  95% {
+    -webkit-transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }

@@ -34,8 +34,19 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    <!--Loading Screen-->
+    <script>
+      window.onload=function(){
+      setTimeout(function(){
+      $('#loadingMsg').fadeOut( 750, function() {
+        // Animation complete.
+      });
+      }, 0);
+      };
+    </script>
+    <%= render 'layouts/loading' %>
 
+    <%= render 'layouts/header' %>
     <div>
       <% flash.each do |key, value| %>
         <%= content_tag(:div, value, class: "alert alert-#{key}") %>
