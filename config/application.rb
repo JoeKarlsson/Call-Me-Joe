@@ -22,6 +22,7 @@ module CallMeJoe
     I18n.enforce_available_locales = true
 
     # config/application.rb
+    config.assets.precompile += Ckeditor.assets
     config.assets.initialize_on_precompile = false
   end
 end
