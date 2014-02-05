@@ -9,7 +9,7 @@
 	    <div class="timestamp"> 
 		  Posted <%= time_ago_in_words(post.created_at) %> ago.
 		</div> </br>
-	    <p class="lead section-lead"><%= truncate post.content, length: 500, separator: ' '  %></p>
+	    <p class="lead section-lead"><%= truncate post.description, length: 500, separator: ' '  %></p>
 		</br>
 		<h4><strong><%= link_to 'Read More', post, class: 'btn btn-large btn-primary' %></strong></h4>
 	  </div>

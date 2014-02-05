@@ -82,5 +82,7 @@ CallMeJoe::Application.configure do
   # config.force_ssl = true
 
   config.action_mailer.default_url_options = { :host => 'http://www.callmejoe.net' }
+  
+  config.action_controller.perform_caching = true
 
 end
