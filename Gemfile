@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
-gem 'rails', '4.0.2'
+gem 'rails', '6.0.3.5'
 gem 'pg', '0.15.1'
 gem 'bootstrap-sass'
 gem 'will_paginate'
