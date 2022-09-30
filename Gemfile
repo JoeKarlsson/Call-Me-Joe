@@ -13,7 +13,7 @@ gem 'font-awesome-sass'
 gem 'friendly_id'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'ckeditor_rails'
-gem 'psych', '2.0.5'
+gem 'psych', '2.0.17'
 
 
 group :development, :test do
