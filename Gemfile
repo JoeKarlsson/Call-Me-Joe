@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
-gem 'rails', '4.0.2'
+gem 'rails', '7.1.0'
 gem 'pg', '0.15.1'
 gem 'bootstrap-sass'
 gem 'will_paginate'
@@ -11,13 +11,13 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'font-awesome-sass'
 gem 'friendly_id'
-gem 'meta-tags', :require => 'meta_tags'
-gem 'ckeditor_rails'
+gem 'meta-tags', '>= 2.1.0', :require => 'meta_tags'
+gem 'ckeditor_rails', '>= 4.4.0'
 gem 'psych', '2.0.5'
 
 
 group :development, :test do
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails', '2.13.2'
 end
 
 group :test do
@@ -25,11 +25,11 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 5.0.8'
 gem 'uglifier', '2.1.1'
-gem 'coffee-rails', '4.0.1'
-gem 'jquery-rails', '3.0.4'
-gem 'turbolinks', '1.1.1'
+gem 'coffee-rails', '4.2.2'
+gem 'jquery-rails', '4.0.1'
+gem 'turbolinks', '1.2.0'
 gem 'jbuilder', '1.0.2'
 
 group :doc do
